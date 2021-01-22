@@ -10,6 +10,14 @@
 
 <!-- Normalize -->
 
+<!-- a=1
+for i in *.jpg; do
+  new=$(printf "%02d.jpg" "$a") #04 pad to length of 4
+  mv -i -- "$i" "$new"
+  let a=a+1
+done  -->
+
+
 <link rel="stylesheet" href="css/assets/normalize.css" type="text/css">
 
 <!-- Bootstrap -->
@@ -54,15 +62,30 @@
   <div class="container-fluid">
       <hgroup>
           <!-- logo -->
-              <h1>
+<!--               <h1>
                   <a href="index.html" title="Simran Saxena">
                   <h1> <a title="Simran Saxena"><img src="images/logo.png" title="S"/></a> </h1>
 
-              </h1>
+              </h1> -->
+
+              <nav id="nav-wrap">
+
+                 <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+                  <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+                 <ul id="nav" class="nav">
+                    <li><a class="smoothscroll" href="#container" style="background-color: #EBEBEB">About</a></li>
+                    <li><a class="smoothscroll" href="#projects" style="background-color: #EBEBEB">Projects</a></li>
+                   <li><a class="smoothscroll" href="#photography" style="background-color: #EBEBEB">Phototgraphy</a></li>
+                   <li><a class="smoothscroll" href="#digitalArt" style="background-color: #EBEBEB">Digital Art</a></li>
+                   <!-- <li><a class="smoothscroll" href="pdfs/cv.pdf" style="background-color: #EBEBEB">CV</a></li> -->
+                 </ul> <!-- end #nav -->
+
+              </nav>
             <!-- logo -->
             <!-- nav -->
 
-            <nav>
+          <!--   <nav>
               <div class="menu-expanded" id="tohide">
                 <div class="nav-icon">
                     <div id="menu" class="menu"></div>
@@ -78,13 +101,13 @@
                           <li><a href="index.html">Home</a></li>
                           <li><a href="#container">About</a></li>
                           <!-- <li><a href="index.html#projects">Projects</a></li> -->
-                          <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#projects">Projects</a></li>  
+                          <!-- <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#projects">Projects</a></li>  
 
                           <li><a href="#photography">Phototgraphy</a></li>
                       </ul>
                   </div>
               </div>
-            </nav>
+            </nav> -->
             <!-- nav -->
         </hgroup>
     </div>
@@ -177,119 +200,32 @@
               <a href="details.html">View more</a> </figcaption>
           </figure>
         </li>
-      <!--   <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/05.jpg" alt="" />
+        <li class="masonry-item grid">
+          <figure class="effect-sarah"> <img src="images/byeburns/banner.jpg" alt="" />
             <figcaption>
-              <h2>Photo <span>Title</span></h2>
-              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              <a href="details.html">View more</a> </figcaption>
+              <h2>Photo <span>Bye Burns</span></h2>
+              <p class="description">Automated Timely First-Aid Treatment of Burns</p>
+              <a href="byeburns.html">View more</a> </figcaption>
           </figure>
         </li>
         <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/06.jpg" alt="" />
+          <figure class="effect-sarah"> <img src="images/hestia/01.jpg" alt="" />
             <figcaption>
-              <h2>Photo <span>Title</span></h2>
-              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              <a href="details.html">View more</a> </figcaption>
+              <h2>Photo <span>Hestia</span></h2>
+              <p class="description">For the love of home-made food</p>
+              <a href="hestia.html">View more</a> </figcaption>
           </figure>
         </li>
         <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/07.jpg" alt="" />
+          <figure class="effect-sarah"> <img src="images/projects/bluebells.jpg" alt="" />
             <figcaption>
-              <h2>Photo <span>Title</span></h2>
-              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              <a href="details.html">View more</a> </figcaption>
+              <h2>Photo <span>Blue Bells School</span></h2>
+              <p class="description"></p>
+              <a href="https://www.bluebellsschoollucknow.com/">View more</a> </figcaption>
           </figure>
         </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/08.jpg" alt="" />
-            <figcaption>
-              <h2>Photo <span>Title</span></h2>
-              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              <a href="details.html">View more</a> </figcaption>
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/09.jpg" alt="" />
-            <figcaption>
-              <h2>Photo <span>Title</span></h2>
-              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              <a href="details.html">View more</a> </figcaption>
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/10.jpg" alt="" />
-            <figcaption>
-              <h2>Photo <span>Title</span></h2>
-              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              <a href="details.html">View more</a> </figcaption>
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/11.jpg" alt="" />
-            <figcaption>
-              <h2>Photo <span>Title</span></h2>
-              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              <a href="details.html">View more</a> </figcaption>
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/12.jpg" alt="" />
-            <figcaption>
-              <h2>Photo <span>Title</span></h2>
-              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              <a href="details.html">View more</a> </figcaption>
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/13.jpg" alt="" />
-            <figcaption>
-              <h2>Photo <span>Title</span></h2>
-              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              <a href="details.html">View more</a> </figcaption>
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/14.jpg" alt="" />
-            <figcaption>
-              <h2>Photo <span>Title</span></h2>
-              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              <a href="details.html">View more</a> </figcaption>
-          </figure>
-        </li>
-        
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/16.jpg" alt="" />
-            <figcaption>
-              <h2>Photo <span>Title</span></h2>
-              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              <a href="details.html">View more</a> </figcaption>
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/17.jpg" alt="" />
-            <figcaption>
-              <h2>Photo <span>Title</span></h2>
-              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              <a href="details.html">View more</a> </figcaption>
-          </figure>
-        </li>
-         <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/18.jpg" alt="" />
-            <figcaption>
-              <h2>Photo <span>Title</span></h2>
-              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              <a href="details.html">View more</a> </figcaption>
-          </figure>
-        </li>
-         <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/19.jpg" alt="" />
-            <figcaption>
-              <h2>Photo <span>Title</span></h2>
-              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              <a href="details.html">View more</a> </figcaption>
-          </figure>
-        </li> -->
+
+     
       </ul>
     </div>
   </div>
@@ -552,9 +488,92 @@
       </ul>
     </div>
   </div>
+
+  <div class="wrapper" id="digitalArt">
+    <div class="">
+      <h1> Digital Art </h1>
+      <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-3 masonry">
+        <li class="masonry-item grid">
+          <figure class="effect-sarah"> <img src="images/digitalArt/01.jpg" alt="" />
+          </figure>
+        </li>
+        <li class="masonry-item grid">
+          <figure class="effect-sarah"> <img src="images/digitalArt/02.jpg" alt="" />
+          </figure>
+        </li>
+        <li class="masonry-item grid">
+          <figure class="effect-sarah"> <img src="images/digitalArt/03.jpg" alt="" />
+          </figure>
+        </li>
+        <li class="masonry-item grid">
+          <figure class="effect-sarah"> <img src="images/digitalArt/04.jpg" alt="" />
+          </figure>
+        </li>
+        <li class="masonry-item grid">
+          <figure class="effect-sarah"> <img src="images/digitalArt/05.jpg" alt="" />
+          </figure>
+        </li>
+         <li class="masonry-item grid">
+          <figure class="effect-sarah"> <img src="images/digitalArt/06.jpg" alt="" />
+          </figure>
+        </li>
+        <li class="masonry-item grid">
+          <figure class="effect-sarah"> <img src="images/digitalArt/07.jpg" alt="" />
+          </figure>
+        </li>
+        <li class="masonry-item grid">
+          <figure class="effect-sarah"> <img src="images/digitalArt/08.jpg" alt="" />
+          </figure>
+        </li>        
+      </ul>
+    </div>
+  </div>
+
+
+<!--   <div class="wrapper" id="posters">
+    <div class="">
+      <h1> Posters </h1>
+      <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-3 masonry">
+        <li class="masonry-item grid">
+          <figure class="effect-sarah"> <img src="images/digitalArt/01.jpg" alt="" />
+          </figure>
+        </li>
+        <li class="masonry-item grid">
+          <figure class="effect-sarah"> <img src="images/digitalArt/02.jpg" alt="" />
+          </figure>
+        </li>
+        <li class="masonry-item grid">
+          <figure class="effect-sarah"> <img src="images/digitalArt/03.jpg" alt="" />
+          </figure>
+        </li>
+        <li class="masonry-item grid">
+          <figure class="effect-sarah"> <img src="images/digitalArt/04.jpg" alt="" />
+          </figure>
+        </li>
+        <li class="masonry-item grid">
+          <figure class="effect-sarah"> <img src="images/digitalArt/05.jpg" alt="" />
+          </figure>
+        </li>
+         <li class="masonry-item grid">
+          <figure class="effect-sarah"> <img src="images/digitalArt/06.jpg" alt="" />
+          </figure>
+        </li>
+        <li class="masonry-item grid">
+          <figure class="effect-sarah"> <img src="images/digitalArt/07.jpg" alt="" />
+          </figure>
+        </li>
+        <li class="masonry-item grid">
+          <figure class="effect-sarah"> <img src="images/digitalArt/08.jpg" alt="" />
+          </figure>
+        </li>        
+      </ul>
+    </div>
+  </div> -->
 </main>
 
 <!-- Image Gallery --> 
+
+
 
 <!-- footer -->
 

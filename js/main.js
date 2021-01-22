@@ -22,10 +22,3 @@ $('.menu , .linee').on('click', function() {
 $("html").niceScroll({cursorwidth: '8px',cursorcolor:"#222222" , cursorborder:"1px solid #FFF" , autohidemode: false, zindex: 9999 });
 
 });
-
-$(function(){ 
-    var navMain = $("#tohide");
-    navMain.on("click", "a", null, function () {
-      navMain.collapse('hide');
-    });
-});
