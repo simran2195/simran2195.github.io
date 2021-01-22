@@ -62,22 +62,24 @@
             <!-- logo -->
             <!-- nav -->
 
-
-
             <nav>
-              <div class="menu-expanded">
+              <div class="menu-expanded" id="tohide">
                 <div class="nav-icon">
                     <div id="menu" class="menu"></div>
                       <p>menu</p>
                   </div>
                   <div class="cross">
                       <span class="linee linea1"></span>
+                      <span class="linee linea2"></span>
+                      <span class="linee linea3"></span>                      
                   </div>
-                  <div class="main-menu">
+                  <div class="main-menu" >
                       <ul>
                           <li><a href="index.html">Home</a></li>
                           <li><a href="#container">About</a></li>
-                          <li><a href="#projects">Projects</a></li>
+                          <!-- <li><a href="index.html#projects">Projects</a></li> -->
+                          <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#projects">Projects</a></li>  
+
                           <li><a href="#photography">Phototgraphy</a></li>
                       </ul>
                   </div>
