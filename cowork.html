@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Design Thinking Portfolio</title>
+  <title>Project Portfolio</title>
   <style>
     body {
       font-family: sans-serif;
@@ -18,6 +18,7 @@
       justify-content: center;
       text-align: center;
       color: #333;
+      transition: all 0.5s ease;
     }
 
     .portfolio-item img {
@@ -34,23 +35,34 @@
       font-size: 16px;
       margin: 10px 0;
     }
+
+    .portfolio-item:hover {
+      transform: scale(1.1);
+    }
   </style>
 </head>
 <body>
   <div class="portfolio-item">
-    <img src="design-thinking-project-1.jpg" alt="Design Thinking Project 1">
-    <h2>Design Thinking Project 1</h2>
+    <img src="project-1.jpg" alt="Project 1">
+    <h2>Project 1</h2>
     <p>Description of the project goes here...</p>
   </div>
   <div class="portfolio-item">
-    <img src="design-thinking-project-2.jpg" alt="Design Thinking Project 2">
-    <h2>Design Thinking Project 2</h2>
+    <img src="project-2.jpg" alt="Project 2">
+    <h2>Project 2</h2>
     <p>Description of the project goes here...</p>
   </div>
   <div class="portfolio-item">
-    <img src="design-thinking-project-3.jpg" alt="Design Thinking Project 3">
-    <h2>Design Thinking Project 3</h2>
+    <img src="project-3.jpg" alt="Project 3">
+    <h2>Project 3</h2>
     <p>Description of the project goes here...</p>
   </div>
-</body>
-</html>
+
+  <script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+    portfolioItems.forEach(item => {
+      item.addEventListener('mouseenter', () => {
+        item.style.transform = 'scale(1.1)';
+      });
+      item.addEventListener('mouseleave', () => {
