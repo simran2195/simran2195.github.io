@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 
-<html class="no-js"  lang="en">
+<html class="no-js" lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-<title>Simran Saxena</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <title>Simran Saxena</title>
 
-<!-- Normalize -->
+  <!-- Normalize -->
 
-<!-- a=1
+  <!-- a=1
 for i in *.jpg; do
   new=$(printf "%02d.jpg" "$a") #04 pad to length of 4
   mv -i -- "$i" "$new"
@@ -18,32 +19,32 @@ for i in *.jpg; do
 done  -->
 
 
-<link rel="stylesheet" href="css/assets/normalize.css" type="text/css">
+  <link rel="stylesheet" href="css/assets/normalize.css" type="text/css">
 
-<!-- Bootstrap -->
+  <!-- Bootstrap -->
 
-<link href="css/assets/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/assets/bootstrap.min.css" rel="stylesheet" type="text/css">
 
-<!-- Font-awesome.min -->
+  <!-- Font-awesome.min -->
 
-<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-<!-- Effet -->
+  <!-- Effet -->
 
-<link rel="stylesheet" href="css/gallery/foundation.min.css"  type="text/css">
-<link rel="stylesheet" type="text/css" href="css/gallery/set1.css" />
+  <link rel="stylesheet" href="css/gallery/foundation.min.css" type="text/css">
+  <link rel="stylesheet" type="text/css" href="css/gallery/set1.css" />
 
-<!-- Main Style -->
+  <!-- Main Style -->
 
-<link rel="stylesheet" href="css/main.css" type="text/css">
+  <link rel="stylesheet" href="css/main.css" type="text/css">
 
-<!-- Responsive Style -->
+  <!-- Responsive Style -->
 
-<link href="css/responsive.css" rel="stylesheet" type="text/css">
+  <link href="css/responsive.css" rel="stylesheet" type="text/css">
 
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 
-<!--[if lt IE 9]>
+  <!--[if lt IE 9]>
 
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 
@@ -51,46 +52,136 @@ done  -->
 
     <![endif]-->
 
-<script src="js/assets/modernizr-2.8.3.min.js" type="text/javascript"></script>
+  <script src="js/assets/modernizr-2.8.3.min.js" type="text/javascript"></script>
+  <style>
+    .timeline {
+      position: relative;
+      padding: 0;
+      list-style: none;
+    }
+
+    .timeline:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 2px;
+      margin-left: -1px;
+      background-color: #C5C5C5;
+    }
+
+    .timeline-item {
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .timeline-icon {
+      background: #6C757D;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -15px;
+      border-radius: 50%;
+      z-index: 100;
+    }
+
+    .timeline-content {
+      width: 45%;
+      padding: 0 20px;
+      background: #F2F2F2;
+      position: relative;
+      border-radius: 5px;
+    }
+
+    .timeline-content.left {
+      left: 0;
+    }
+
+    .timeline-content.right {
+      left: 55%;
+    }
+
+    .timeline-content .title {
+      font-size: 1.5em;
+      margin-top: 0;
+    }
+
+    .timeline-content .btn {
+      background: #3498db;
+      color: white;
+      padding: 5px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .timeline-content p {
+      margin-bottom: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+      .timeline:before {
+        left: 20px;
+      }
+
+      .timeline-icon {
+        left: 20px;
+      }
+
+      .timeline-content.left,
+      .timeline-content.right {
+        width: calc(100% - 60px);
+        left: 40px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- header -->
+  <!-- header -->
 
-<header id="header" class="header">
-  <div class="container-fluid">
+  <header id="header" class="header">
+    <div class="container-fluid">
       <hgroup>
-          <!-- logo -->
-<!--               <h1>
+        <!-- logo -->
+        <!--               <h1>
                   <a href="index.html" title="Simran Saxena">
                   <h1> <a title="Simran Saxena"><img src="images/logo.png" title="S"/></a> </h1>
 
               </h1> -->
 
-              <nav id="nav-wrap">
+        <nav id="nav-wrap">
 
-                 <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-                  <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+          <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+          <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
-                 <ul id="nav" class="nav">
-                    <li><a class="smoothscroll" href="#container" style="background-color: #9bddff">About</a></li>
-                    <li><a class="smoothscroll" href="https://drive.google.com/file/d/1jxcj0Ew6QclaDqEBTIQ-oJhxoTAqdoCH/view?usp=sharing" style="background-color: #9bddff">CV</a></li>
-                    <li><a class="smoothscroll" href="#awards" style="background-color: #9bddff">Awards and Achievements</a></li>
-                    <li><a class="smoothscroll" href="#leadership" style="background-color: #9bddff">Making a Difference</a></li>
-                    <li><a class="smoothscroll" href="#projects" style="background-color: #9bddff">Projects</a></li>
-                   <li><a class="smoothscroll" href="#photography" style="background-color: #9bddff">Phototgraphy</a></li>
-                   <li><a class="smoothscroll" href="#digitalArt" style="background-color: #9bddff">Digital Art</a></li>
-                   <li><a class="smoothscroll" href="index.html" style="background-color: #9bddff">    .</a></li>
+          <ul id="nav" class="nav">
+            <li><a class="smoothscroll" href="#container" style="background-color: #9bddff">About</a></li>
+            <li><a class="smoothscroll"
+                href="https://drive.google.com/file/d/1jxcj0Ew6QclaDqEBTIQ-oJhxoTAqdoCH/view?usp=sharing"
+                style="background-color: #9bddff">CV</a></li>
+            <li><a class="smoothscroll" href="#awards" style="background-color: #9bddff">Awards and Achievements</a>
+            </li>
+            <li><a class="smoothscroll" href="#leadership" style="background-color: #9bddff">Making a Difference</a>
+            </li>
+            <li><a class="smoothscroll" href="#projects" style="background-color: #9bddff">Projects</a></li>
+            <li><a class="smoothscroll" href="#photography" style="background-color: #9bddff">Phototgraphy</a></li>
+            <li><a class="smoothscroll" href="#digitalArt" style="background-color: #9bddff">Digital Art</a></li>
+            <li><a class="smoothscroll" href="index.html" style="background-color: #9bddff"> .</a></li>
 
-                   <!-- <li><a class="smoothscroll" href="pdfs/cv.pdf" style="background-color: #EBEBEB">CV</a></li> -->
-                 </ul> <!-- end #nav -->
+            <!-- <li><a class="smoothscroll" href="pdfs/cv.pdf" style="background-color: #EBEBEB">CV</a></li> -->
+          </ul> <!-- end #nav -->
 
-              </nav>
-            <!-- logo -->
-            <!-- nav -->
+        </nav>
+        <!-- logo -->
+        <!-- nav -->
 
-          <!--   <nav>
+        <!--   <nav>
               <div class="menu-expanded" id="tohide">
                 <div class="nav-icon">
                     <div id="menu" class="menu"></div>
@@ -106,608 +197,691 @@ done  -->
                           <li><a href="index.html">Home</a></li>
                           <li><a href="#container">About</a></li>
                           <!-- <li><a href="index.html#projects">Projects</a></li> -->
-                          <!-- <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#projects">Projects</a></li>  
+        <!-- <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#projects">Projects</a></li>  
 
                           <li><a href="#photography">Phototgraphy</a></li>
                       </ul>
                   </div>
               </div>
             </nav> -->
-            <!-- nav -->
-        </hgroup>
+        <!-- nav -->
+      </hgroup>
     </div>
-</header>
+  </header>
 
-<!-- header -->
+  <!-- header -->
 
-<main class="main-wrapper" id="container"> 
-  
-  <div class="container">
+  <main class="main-wrapper" id="container">
 
-    <div class="wrapper-inner">
+    <div class="container">
 
-      <div class="about-content">
+      <div class="wrapper-inner">
 
-      <!-- left -->
+        <div class="about-content">
 
-      <section class="inner-left">
+          <!-- left -->
 
-        <header>
+          <section class="inner-left">
 
-          <h1>Simran Saxena</h1>
-          <h4>Graduate student at University of Washington, GIX, USA</h4>
+            <header>
 
-          <h5>Coder | Innovator | Researcher | Photographer</h5>
+              <h1>Simran Saxena</h1>
+              <h4>Graduate student at University of Washington, GIX, USA</h4>
 
-        </header>
+              <h5>Coder | Innovator | Researcher | Photographer</h5>
 
-        <figure class="details-image">
+            </header>
+
+            <figure class="details-image">
 
             <img src="images/simran.jpg" alt="" class="img-responsive"/>
 
-        </figure>
+            </figure>
 
 
-      </section>
+          </section>
 
-      <!-- left -->
+          <!-- left -->
 
-      <!-- right -->
+          <!-- right -->
 
-      <section class="inner-right" style="padding:55px">
+          <section class="inner-right" style="padding:55px">
 
-        <!-- <h4>About</h4> -->
-        <h2 style="font-family:cursive">“Challenges are what make life interesting and overcoming them is what makes life meaningful”</h2>
+            <!-- <h4>About</h4> -->
+            <h2 style="font-family:cursive">“Challenges are what make life interesting and overcoming them is what makes
+              life meaningful”</h2>
 
-        <p></p>
+            <p></p>
 
-        <p style="text-align:justify">I am a Computer Science major, with my Bachelor's (Honors) and Master's degrees in Computer Science and Engineerin from IIIT Delhi, India. I also hold a Minor in Economics. I'll be joining the University of Washington, USA for MS in Technology Innovation (Computer Science major) starting Fall'22. 
-        I am particularly interested in the domains of <b> HCI, Social Computing, Privacy and Security, and Social Sciences</b>. I love working on interdisciplinary challenges which impact the lives of people. </p> 
+            <p style="text-align:justify">I am a Computer Science major, with my Bachelor's (Honors) and Master's
+              degrees in Computer Science and Engineerin from IIIT Delhi, India. I also hold a Minor in Economics. I'll
+              be joining the University of Washington, USA for MS in Technology Innovation (Computer Science major)
+              starting Fall'22.
+              I am particularly interested in the domains of <b> HCI, Social Computing, Privacy and Security, and Social
+                Sciences</b>. I love working on interdisciplinary challenges which impact the lives of people. </p>
 
-        <p> I have been fortunate to be advised by amazing mentors: <b><u><a href="https://www.iiitd.ac.in/pk"> Dr. PK </a></b></u>, <b><u><a href="https://www.linkedin.com/in/alpana-dubey-2b66a21/?originalSubdomain=in"> Dr. Alpana Dubey </a></b></u>, <b><u><a href="https://www.iiitd.ac.in/pushpendra"> Dr. Pushpendra Singh </a></b></u>, <b><u><a href="http://akratisaxena.com/"> Dr. Akrati Saxena </a></b></u>, <b><u><a href="https://sites.google.com/view/goyalpuneet/home"> Dr. Puneet Goyal </a></b></u>, and <b><u><a href="https://ssh.iiitd.ac.in/pankaj.php"> Prof. Pankaj Vajpayee </a></b></u>. 
+            <p> I have been fortunate to be advised by amazing mentors: <b><u><a
+                    href="https://bime.uw.edu/faculty/andrea-hartzler/"> Dr. Andrea Hartzler </a></b></u>, <b><u><a
+                    href="https://www.iiitd.ac.in/pk"> Dr. PK </a></b></u>, <b><u><a
+                    href="https://www.linkedin.com/in/alpana-dubey-2b66a21/?originalSubdomain=in"> Dr. Alpana Dubey
+                  </a></b></u>, <b><u><a href="https://www.iiitd.ac.in/pushpendra"> Dr. Pushpendra Singh </a></b></u>,
+              <b><u><a href="http://akratisaxena.com/"> Dr. Akrati Saxena </a></b></u>, <b><u><a
+                    href="https://sites.google.com/view/goyalpuneet/home"> Dr. Puneet Goyal </a></b></u>, and <b><u><a
+                    href="https://ssh.iiitd.ac.in/pankaj.php"> Prof. Pankaj Vajpayee </a></b></u>.
 
-      </section>
+          </section>
 
-      <!-- right -->
+          <!-- right -->
 
+        </div>
       </div>
-    </div>  
-  </div>
-
-
-<!-- Making a difference -->
-
- <div class="wrapper">
-    <div class="" id="awards">
-      <h1> Awards and Achievements </h1>
-
-      <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-3 masonry">
-
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/uw_gix.jpg" alt="" />
-            <figcaption>
-              <h2 style="color:white;">University of washington MS in Technology Innovation Scholarship</h2>
-              <p>Awarded a scholarship of $20,000 based of the strength of my application for the graduate school at UW.</p>
-              <p>Click to know more...</p>
-              <a href="https://gixnetwork.org/">View more</a> </figcaption>             
-          </figure>
-        </li>    
-
-         <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/leadership/WTM0.png" alt="" />
-            <figcaption>
-              <h2 style="color:white;">Google   WomenTech   Makers    Scholarship</h2>
-              <p>Google WomenTech Makers Scholar (Anita Borg Scholarship) for demonstrating outstanding academic achievement, leadership and community involvement. Invited for an all funded Scholar's Retreat at Google, Seoul, South Korea and received $1000 scholarship</p>
-              <p>Click to know more...</p>
-
-              <a href="wtm.html">View more</a> </figcaption>              
-
-          </figure>
-        </li>    
-
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/ghci/ghci11.jpg" alt="" />
-            <figcaption>
-              <h2 style="color:white;">Grace Hopper Conference India</h2>
-              <p>Received invitation and travel grant from Google to attend the Grace Hopper Conference India Celebration.</p>
-              <p>Click to know more...</p>
-
-              <a href="ghci.html">View more</a> </figcaption>              
-          </figure>
-        </li> 
-
-
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/firebase/fb1.jpg" alt="" />
-            <figcaption>
-              <h2 style="color:white;">Google Firebase Summit, Prague, Czech Republic</h2>
-              <p>Awarded Women TechMakers Travel Grant from Google to attend Firebase Summit in Prague, Czech Republic.</p>
-              <p>Click to know more...</p>
-
-              <a href="firebase.html">View more</a> </figcaption>              
-          </figure>
-        </li>
-
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/iwd18/iwd1.jpg" alt="" />
-            <figcaption>
-              <h2 style="color:white;">International Women's Day Celebration @ Google Bangalore</h2>
-              <p>Invited for International Women's Day Celebration 2018 at Google Office, Bangalore. Google supported me through a travel grant to attent the event.</p>
-              <p>Click to know more...</p>
-
-              <a href="iwd18.html">View more</a> </figcaption>              
-          </figure>
-        </li>
-
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gdd/gdd1.jpg" alt="" />
-            <figcaption>
-              <h2 style="color:white;">Google Developer's Days Conference, Bangalore</h2>
-              <p>Invited for the 1st Google Developers Days Conference India at Bangalore</p>
-              <p>Click to know more...</p>
-
-              <a href="gdd.html">View more</a> </figcaption>              
-          </figure>
-        </li>
-
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gpods.jpeg" alt="" />
-            <figcaption>
-              <h2 style="color:white;">Fellow @GPODS</h2>
-              <p>A three-month intensive program involving a host of lectures and skill workshops to build a foundational understanding of global governance, public policy, sustainable ecosystems, and strategic issues from a multidimensional perspective</p>
-              <p>Click to know more...</p>
-
-              <a href="https://www.gpods.org/">View more</a> </figcaption>              
-          </figure>
-        </li>
-
-      </ul>
     </div>
-  </div>
+
+    <!-- Experiences Section -->
+    <div class="wrapper" id="experiences">
+      <div class="">
+        <h1>Experiences</h1>
+        <div class="timeline">
+          <!-- Experience Item Left -->
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <!-- Icon or image for timeline item -->
+            </div>
+            <div class="timeline-content left">
+              <h2>Title of Experience One</h2>
+              <p>Short description of the experience, role, achievements, and timeframe.</p>
+              <a href="link-to-more-info.html" class="btn">View more</a>
+            </div>
+          </div>
+          <!-- Experience Item Right -->
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <!-- Icon or image for timeline item -->
+            </div>
+            <div class="timeline-content right">
+              <h2>Title of Experience Two</h2>
+              <p>Short description of the experience, role, achievements, and timeframe.</p>
+              <a href="link-to-more-info.html" class="btn">View more</a>
+            </div>
+          </div>
+          <!-- Add more experiences as needed -->
+        </div>
+      </div>
+    </div>
+    <!-- End of Experiences Section -->
 
 
+    <!-- Making a difference -->
 
-<!-- Making a difference -->
+    <div class="wrapper">
+      <div class="" id="awards">
+        <h1> Awards and Achievements </h1>
 
- <div class="wrapper">
-    <div class="" id="leadership">
-      <h1> Making a Difference </h1>
-
-      <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-3 masonry">
-         <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/leadership/sc1.jpg" alt="" />
-            <figcaption>
-              <h2 style="color:white;">Summer Camp for Children</h2>
-              <p>Organized summer camps for children of domestic helpers in my residential colony</p>
-
-          </figure>
-        </li>   
-
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/wit.png" alt="" />
-            <figcaption>
-              <h2 style="color:white;">Founder, Women in Tech @ IIIT Delhi</span></h2>
-              <p>Co-founded the Women in Tech Club at IIIT Delhi. It's now a community of over 3000 people.</p>
-              <p>Click for website...</p>
-
-              <a href="http://wit.iiitd.edu.in/home">View more</a> </figcaption>
-          </figure>
-        </li> 
+        <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-3 masonry">
 
           <li class="masonry-item grid">
-           <figure class="effect-sarah"> <img src="images/talks_sops_2.jpeg" alt="" />
-             <figcaption>
-               <h2 style="color:white;">Talk on How to ace your essays and sops</h2>
-               <p>Gave a talk in the International Women's Day Celebration hosted by Google Women TechMakers and Google Developers Groups Communities</p>
-               <p>Click for slides</p>
+            <figure class="effect-sarah"> <img src="images/uw_gix.jpg" alt="" />
+              <figcaption>
+                <h2 style="color:white;">University of washington MS in Technology Innovation Scholarship</h2>
+                <p>Awarded a scholarship of $20,000 based of the strength of my application for the graduate school at
+                  UW.</p>
+                <p>Click to know more...</p>
+                <a href="https://gixnetwork.org/">View more</a>
+              </figcaption>
+            </figure>
+          </li>
 
-               <a href="https://drive.google.com/file/d/1yE4tKgyEneASMcQFDvCJdjNIFhjTb5qR/view?usp=sharing">Slides</a> </figcaption>              
- 
-           </figure>
-         </li>   
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/leadership/WTM0.png" alt="" />
+              <figcaption>
+                <h2 style="color:white;">Google WomenTech Makers Scholarship</h2>
+                <p>Google WomenTech Makers Scholar (Anita Borg Scholarship) for demonstrating outstanding academic
+                  achievement, leadership and community involvement. Invited for an all funded Scholar's Retreat at
+                  Google, Seoul, South Korea and received $1000 scholarship</p>
+                <p>Click to know more...</p>
 
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/ytl.png" alt="" />
-            <figcaption>
-              <h2 style="color:white;">Live on Google Student's YouTube Channel</h2>
-              <p>Invited by Google to talk about my Women TechMakers Scholarship application process and experience live on YouTube from Google Office</p>
-              <p>Click for video...</p>
+                <a href="wtm.html">View more</a>
+              </figcaption>
 
-              <a href="https://www.youtube.com/watch?v=OC8JsvgAfYM&ab_channel=GoogleStudents">View more</a> </figcaption>
-          </figure>
-        </li> 
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/codxcrypt.jpg" alt="" />
-            <figcaption>
-              <h2 style="color:white;">YouTube Live</span></h2>
-              <p>Invited by CodXCrypt to talk live about Google Generation Scholarship Applications and guiding students</p>
-              <p>Click for video...</p>
+            </figure>
+          </li>
 
-              <a href="https://www.youtube.com/watch?v=BKjGZaGnEIM&ab_channel=CodXCryptCommunity">View more</a> </figcaption>
-          </figure>
-        </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/ghci/ghci11.jpg" alt="" />
+              <figcaption>
+                <h2 style="color:white;">Grace Hopper Conference India</h2>
+                <p>Received invitation and travel grant from Google to attend the Grace Hopper Conference India
+                  Celebration.</p>
+                <p>Click to know more...</p>
 
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/risinggaea.png" alt="" />
-            <figcaption>
-              <h2 style="color:white;">HEAD OF RESEARCH - TECHNOLOGY POLICY @ Rising Gaea</span></h2>
-              <p>Enabling change while contribtuing through my skills in Research, Technology, and Policy </p>
-              <p>Click for website...</p>
+                <a href="ghci.html">View more</a>
+              </figcaption>
+            </figure>
+          </li>
 
-              <a href="https://risinggaea.wixsite.com/risinggaea">View more</a> </figcaption>
-          </figure>
-        </li>
-      </ul>
+
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/firebase/fb1.jpg" alt="" />
+              <figcaption>
+                <h2 style="color:white;">Google Firebase Summit, Prague, Czech Republic</h2>
+                <p>Awarded Women TechMakers Travel Grant from Google to attend Firebase Summit in Prague, Czech
+                  Republic.</p>
+                <p>Click to know more...</p>
+
+                <a href="firebase.html">View more</a>
+              </figcaption>
+            </figure>
+          </li>
+
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/iwd18/iwd1.jpg" alt="" />
+              <figcaption>
+                <h2 style="color:white;">International Women's Day Celebration @ Google Bangalore</h2>
+                <p>Invited for International Women's Day Celebration 2018 at Google Office, Bangalore. Google supported
+                  me through a travel grant to attent the event.</p>
+                <p>Click to know more...</p>
+
+                <a href="iwd18.html">View more</a>
+              </figcaption>
+            </figure>
+          </li>
+
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/gdd/gdd1.jpg" alt="" />
+              <figcaption>
+                <h2 style="color:white;">Google Developer's Days Conference, Bangalore</h2>
+                <p>Invited for the 1st Google Developers Days Conference India at Bangalore</p>
+                <p>Click to know more...</p>
+
+                <a href="gdd.html">View more</a>
+              </figcaption>
+            </figure>
+          </li>
+
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/gpods.jpeg" alt="" />
+              <figcaption>
+                <h2 style="color:white;">Fellow @GPODS</h2>
+                <p>A three-month intensive program involving a host of lectures and skill workshops to build a
+                  foundational understanding of global governance, public policy, sustainable ecosystems, and strategic
+                  issues from a multidimensional perspective</p>
+                <p>Click to know more...</p>
+
+                <a href="https://www.gpods.org/">View more</a>
+              </figcaption>
+            </figure>
+          </li>
+
+        </ul>
+      </div>
     </div>
-  </div>
 
 
 
-  <!-- Projects -->
+    <!-- Making a difference -->
 
-  <div class="wrapper">
-    <div class="" id="projects">
-      <h1> Projects </h1>
+    <div class="wrapper">
+      <div class="" id="leadership">
+        <h1> Making a Difference </h1>
 
-      <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-3 masonry">
-         <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/projects/thesis.jpg" alt="" />
-            <figcaption>
-              <h2 style="color:white;">Confidentiality Protection in Crowdsourcing</h2>
-              <p>The project aims to study the process of crowdsourcing thoroughly, identify points from where confidentiality leaks could occur, the types of vulnerabilities, and suggest solutions to ensure confidentiality of data before it is posted on a crowdsourcing platform by an organization.</p>
-              <a href="thesis_details.html">View more</a> </figcaption>              
+        <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-3 masonry">
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/leadership/sc1.jpg" alt="" />
+              <figcaption>
+                <h2 style="color:white;">Summer Camp for Children</h2>
+                <p>Organized summer camps for children of domestic helpers in my residential colony</p>
 
-          </figure>
-        </li>    
+            </figure>
+          </li>
 
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/projects/btp.jpg" alt="" />
-            <figcaption>
-              <h2 style="color:white;">Android App <span> for IIIT Delhi</span></h2>
-              <p>The project aims to successfully build an Android Application which would serve as a single platform to view all activities at IIIT Delhi. It makes use of Android Studio, Java Programming, JSoup Library, few APIs and Firebase Cloud Platform. Few of its features involve: viewing the seminars, adding them to the calendar, reading the research related news of the Institute, a directory of the Institute with one tap calling and emailing facility, project management and advertisement interface etc.</p>
-              <a href="btp.html">View more</a> </figcaption>
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/projects/psosm_project.jpg" alt="" />
-            <figcaption>
-              <h2>Photo <span>Identifying Facebook profiles from Tinder Profiles</span></h2>
-              <p class="description">Studied the linkability issue that exists in the world of social networks. Linked Facebook profiles using the information given on Tinder Profiles of people and found out more about them than that they intended to reveal. Highlighted the privacy concern that exists in such cases.</p>
-              <a href="https://iiitd-cse648-psosm2017.blogspot.com/2017/11/in-online-world-everything-that-you.html">View more</a> </figcaption>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/wit.png" alt="" />
+              <figcaption>
+                <h2 style="color:white;">Founder, Women in Tech @ IIIT Delhi</span></h2>
+                <p>Co-founded the Women in Tech Club at IIIT Delhi. It's now a community of over 3000 people.</p>
+                <p>Click for website...</p>
+
+                <a href="http://wit.iiitd.edu.in/home">View more</a>
+              </figcaption>
+            </figure>
+          </li>
+
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/talks_sops_2.jpeg" alt="" />
+              <figcaption>
+                <h2 style="color:white;">Talk on How to ace your essays and sops</h2>
+                <p>Gave a talk in the International Women's Day Celebration hosted by Google Women TechMakers and Google
+                  Developers Groups Communities</p>
+                <p>Click for slides</p>
+
+                <a href="https://drive.google.com/file/d/1yE4tKgyEneASMcQFDvCJdjNIFhjTb5qR/view?usp=sharing">Slides</a>
+              </figcaption>
+
+            </figure>
+          </li>
+
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/ytl.png" alt="" />
+              <figcaption>
+                <h2 style="color:white;">Live on Google Student's YouTube Channel</h2>
+                <p>Invited by Google to talk about my Women TechMakers Scholarship application process and experience
+                  live on YouTube from Google Office</p>
+                <p>Click for video...</p>
+
+                <a href="https://www.youtube.com/watch?v=OC8JsvgAfYM&ab_channel=GoogleStudents">View more</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/codxcrypt.jpg" alt="" />
+              <figcaption>
+                <h2 style="color:white;">YouTube Live</span></h2>
+                <p>Invited by CodXCrypt to talk live about Google Generation Scholarship Applications and guiding
+                  students</p>
+                <p>Click for video...</p>
+
+                <a href="https://www.youtube.com/watch?v=BKjGZaGnEIM&ab_channel=CodXCryptCommunity">View more</a>
+              </figcaption>
+            </figure>
+          </li>
+
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/risinggaea.png" alt="" />
+              <figcaption>
+                <h2 style="color:white;">HEAD OF RESEARCH - TECHNOLOGY POLICY @ Rising Gaea</span></h2>
+                <p>Enabling change while contribtuing through my skills in Research, Technology, and Policy </p>
+                <p>Click for website...</p>
+
+                <a href="https://risinggaea.wixsite.com/risinggaea">View more</a>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+    <!-- Projects -->
+
+    <div class="wrapper">
+      <div class="" id="projects">
+        <h1> Projects </h1>
+
+        <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-3 masonry">
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/projects/thesis.jpg" alt="" />
+              <figcaption>
+                <h2 style="color:white;">Confidentiality Protection in Crowdsourcing</h2>
+                <p>The project aims to study the process of crowdsourcing thoroughly, identify points from where
+                  confidentiality leaks could occur, the types of vulnerabilities, and suggest solutions to ensure
+                  confidentiality of data before it is posted on a crowdsourcing platform by an organization.</p>
+                <a href="thesis_details.html">View more</a>
+              </figcaption>
+
+            </figure>
+          </li>
+
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/projects/btp.jpg" alt="" />
+              <figcaption>
+                <h2 style="color:white;">Android App <span> for IIIT Delhi</span></h2>
+                <p>The project aims to successfully build an Android Application which would serve as a single platform
+                  to view all activities at IIIT Delhi. It makes use of Android Studio, Java Programming, JSoup Library,
+                  few APIs and Firebase Cloud Platform. Few of its features involve: viewing the seminars, adding them
+                  to the calendar, reading the research related news of the Institute, a directory of the Institute with
+                  one tap calling and emailing facility, project management and advertisement interface etc.</p>
+                <a href="btp.html">View more</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/projects/psosm_project.jpg" alt="" />
+              <figcaption>
+                <h2>Photo <span>Identifying Facebook profiles from Tinder Profiles</span></h2>
+                <p class="description">Studied the linkability issue that exists in the world of social networks. Linked
+                  Facebook profiles using the information given on Tinder Profiles of people and found out more about
+                  them than that they intended to reveal. Highlighted the privacy concern that exists in such cases.</p>
+                <a href="https://iiitd-cse648-psosm2017.blogspot.com/2017/11/in-online-world-everything-that-you.html">View
+                  more</a>
+              </figcaption>
               <a href="details.html">View more</a> </figcaption>
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/byeburns/banner.jpg" alt="" />
-            <figcaption>
-              <h2> <span>Bye Burns</span></h2>
-              <p class="description">Automated Timely First-Aid Treatment of Burns</p>
-              <a href="byeburns.html">View more</a> </figcaption>
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/hestia/01.jpg" alt="" />
-            <figcaption>
-              <h2> <span>Hestia</span></h2>
-              <p class="description">For the love of home-made food</p>
-              <a href="hestia.html">View more</a> </figcaption>
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/projects/bluebells.jpg" alt="" />
-            <figcaption>
-              <h2> <span>Blue Bells School</span></h2>
-              <p class="description"></p>
-              <a href="https://www.bluebellsschoollucknow.com/">View more</a> </figcaption>
-          </figure>
-        </li>
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/byeburns/banner.jpg" alt="" />
+              <figcaption>
+                <h2> <span>Bye Burns</span></h2>
+                <p class="description">Automated Timely First-Aid Treatment of Burns</p>
+                <a href="byeburns.html">View more</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/hestia/01.jpg" alt="" />
+              <figcaption>
+                <h2> <span>Hestia</span></h2>
+                <p class="description">For the love of home-made food</p>
+                <a href="hestia.html">View more</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/projects/bluebells.jpg" alt="" />
+              <figcaption>
+                <h2> <span>Blue Bells School</span></h2>
+                <p class="description"></p>
+                <a href="https://www.bluebellsschoollucknow.com/">View more</a>
+              </figcaption>
+            </figure>
+          </li>
 
-     
-      </ul>
+
+        </ul>
+      </div>
     </div>
-  </div>
 
 
-  <!-- Photography -->
+    <!-- Photography -->
 
-  <div class="wrapper" id="photography">
-    <div class="">
+    <div class="wrapper" id="photography">
+      <div class="">
 
-       <figure class="details-image">
+        <figure class="details-image">
 
-            <img src="images/photography_banner.png" alt="" class="img-responsive"/>
+          <img src="images/photography_banner.png" alt="" class="img-responsive" />
 
         </figure>
-      <!-- <h1> Photography </h1> -->
+        <!-- <h1> Photography </h1> -->
 
-      <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-3 masonry">
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/01.jpg" alt="" />
-        <!--     <figcaption>
+        <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-3 masonry">
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/gallery/01.jpg" alt="" />
+              <!--     <figcaption>
               <h2>Photo <span>Title</span></h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <a href="details.html">View more</a> </figcaption> -->
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/02.jpg" alt="" />
-            <!-- <figcaption>
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/gallery/02.jpg" alt="" />
+              <!-- <figcaption>
               <h2>Photo <span>Title</span></h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <a href="details.html">View more</a> </figcaption> -->
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/03.jpg" alt="" />
-            <!-- <figcaption>
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/gallery/03.jpg" alt="" />
+              <!-- <figcaption>
               <h2>Photo <span>Title</span></h2>
               <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               <a href="details.html">View more</a> </figcaption> -->
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/04.jpg" alt="" />
-            <!-- <figcaption>
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/gallery/04.jpg" alt="" />
+              <!-- <figcaption>
               <h2>Photo <span>Title</span></h2>
               <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               <a href="details.html">View more</a> </figcaption> -->
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/05.jpg" alt="" />
-           <!--  <figcaption>
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/gallery/05.jpg" alt="" />
+              <!--  <figcaption>
               <h2>Photo <span>Title</span></h2>
               <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               <a href="details.html">View more</a> </figcaption> -->
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/06.jpg" alt="" />
-            <!-- <figcaption>
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/gallery/06.jpg" alt="" />
+              <!-- <figcaption>
               <h2>Photo <span>Title</span></h2>
               <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               <a href="details.html">View more</a> </figcaption> -->
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/07.jpg" alt="" />
-           <!--  <figcaption>
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/gallery/07.jpg" alt="" />
+              <!--  <figcaption>
               <h2>Photo <span>Title</span></h2>
               <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               <a href="details.html">View more</a> </figcaption> -->
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/08.jpg" alt="" />
-            <!-- <figcaption>
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/gallery/08.jpg" alt="" />
+              <!-- <figcaption>
               <h2>Photo <span>Title</span></h2>
               <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               <a href="details.html">View more</a> </figcaption> -->
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/09.jpg" alt="" />
-            <!-- <figcaption>
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/gallery/09.jpg" alt="" />
+              <!-- <figcaption>
               <h2>Photo <span>Title</span></h2>
               <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               <a href="details.html">View more</a> </figcaption> -->
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/10.jpg" alt="" />
-            <!-- <figcaption>
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/gallery/10.jpg" alt="" />
+              <!-- <figcaption>
               <h2>Photo <span>Title</span></h2>
               <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               <a href="details.html">View more</a> </figcaption> -->
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/11.jpg" alt="" />
-            <!-- <figcaption>
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/gallery/11.jpg" alt="" />
+              <!-- <figcaption>
               <h2>Photo <span>Title</span></h2>
               <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               <a href="details.html">View more</a> </figcaption> -->
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/12.jpg" alt="" />
-            <!-- <figcaption>
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/gallery/12.jpg" alt="" />
+              <!-- <figcaption>
               <h2>Photo <span>Title</span></h2>
               <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               <a href="details.html">View more</a> </figcaption> -->
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/13.jpg" alt="" />
-            <!-- <figcaption>
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/gallery/13.jpg" alt="" />
+              <!-- <figcaption>
               <h2>Photo <span>Title</span></h2>
               <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               <a href="details.html">View more</a> </figcaption> -->
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/14.jpg" alt="" />
-            <!-- <figcaption>
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/gallery/14.jpg" alt="" />
+              <!-- <figcaption>
               <h2>Photo <span>Title</span></h2>
               <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               <a href="details.html">View more</a> </figcaption> -->
-          </figure>
-        </li>
-        
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/16.jpg" alt="" />
-            <!-- <figcaption>
+            </figure>
+          </li>
+
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/gallery/16.jpg" alt="" />
+              <!-- <figcaption>
               <h2>Photo <span>Title</span></h2>
               <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               <a href="details.html">View more</a> </figcaption> -->
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/17.jpg" alt="" />
-           <!--  <figcaption>
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/gallery/17.jpg" alt="" />
+              <!--  <figcaption>
               <h2>Photo <span>Title</span></h2>
               <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               <a href="details.html">View more</a> </figcaption> -->
-          </figure>
-        </li>
-         <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/18.jpg" alt="" />
-            <!-- <figcaption>
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/gallery/18.jpg" alt="" />
+              <!-- <figcaption>
               <h2>Photo <span>Title</span></h2>
               <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               <a href="details.html">View more</a> </figcaption> -->
-          </figure>
-        </li>
-         <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/19.jpg" alt="" />
-            <!-- <figcaption>
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/gallery/19.jpg" alt="" />
+              <!-- <figcaption>
               <h2>Photo <span>Title</span></h2>
               <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               <a href="details.html">View more</a> </figcaption> -->
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/20.jpg" alt="" />
-            <!-- <figcaption>
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/gallery/20.jpg" alt="" />
+              <!-- <figcaption>
               <h2>Photo <span>Title</span></h2>
               <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               <a href="details.html">View more</a> </figcaption> -->
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/21.jpg" alt="" />
-            <!-- <figcaption>
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/gallery/21.jpg" alt="" />
+              <!-- <figcaption>
               <h2>Photo <span>Title</span></h2>
               <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               <a href="details.html">View more</a> </figcaption> -->
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/22.jpg" alt="" />
-            <!-- <figcaption>
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/gallery/22.jpg" alt="" />
+              <!-- <figcaption>
               <h2>Photo <span>Title</span></h2>
               <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               <a href="details.html">View more</a> </figcaption> -->
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/23.jpg" alt="" />
-            <!-- <figcaption>
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/gallery/23.jpg" alt="" />
+              <!-- <figcaption>
               <h2>Photo <span>Title</span></h2>
               <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               <a href="details.html">View more</a> </figcaption> -->
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/24.jpg" alt="" />
-            <!-- <figcaption>
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/gallery/24.jpg" alt="" />
+              <!-- <figcaption>
               <h2>Photo <span>Title</span></h2>
               <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               <a href="details.html">View more</a> </figcaption> -->
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/25.jpg" alt="" />
-            <!-- <figcaption>
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/gallery/25.jpg" alt="" />
+              <!-- <figcaption>
               <h2>Photo <span>Title</span></h2>
               <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               <a href="details.html">View more</a> </figcaption> -->
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/26.jpg" alt="" />
-            <!-- <figcaption>
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/gallery/26.jpg" alt="" />
+              <!-- <figcaption>
               <h2>Photo <span>Title</span></h2>
               <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               <a href="details.html">View more</a> </figcaption> -->
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/27.jpg" alt="" />
-<!--             <figcaption>
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/gallery/27.jpg" alt="" />
+              <!--             <figcaption>
               <h2>Photo <span>Title</span></h2>
               <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               <a href="details.html">View more</a> </figcaption> -->
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/28.jpg" alt="" />
-          <!--   <figcaption>
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/gallery/28.jpg" alt="" />
+              <!--   <figcaption>
               <h2>Photo <span>Title</span></h2>
               <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               <a href="details.html">View more</a> </figcaption> -->
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/29.jpg" alt="" />
-            <!-- <figcaption>
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/gallery/29.jpg" alt="" />
+              <!-- <figcaption>
               <h2>Photo <span>Title</span></h2>
               <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               <a href="details.html">View more</a> </figcaption> -->
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/30.jpg" alt="" />
-           <!--  <figcaption>
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/gallery/30.jpg" alt="" />
+              <!--  <figcaption>
               <h2>Photo <span>Title</span></h2>
               <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               <a href="details.html">View more</a> </figcaption> -->
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/gallery/31.jpg" alt="" />
-            <!-- <figcaption>
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/gallery/31.jpg" alt="" />
+              <!-- <figcaption>
               <h2>Photo <span>Title</span></h2>
               <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               <a href="details.html">View more</a> </figcaption> -->
-          </figure>
-        </li>
-      </ul>
+            </figure>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
 
-  <div class="wrapper" id="digitalArt">
-    <div class="">
-      <h1> Digital Art </h1>
-      <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-3 masonry">
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/digitalArt/01.jpg" alt="" />
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/digitalArt/02.jpg" alt="" />
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/digitalArt/03.jpg" alt="" />
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/digitalArt/04.jpg" alt="" />
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/digitalArt/05.jpg" alt="" />
-          </figure>
-        </li>
-         <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/digitalArt/06.jpg" alt="" />
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/digitalArt/07.jpg" alt="" />
-          </figure>
-        </li>
-        <li class="masonry-item grid">
-          <figure class="effect-sarah"> <img src="images/digitalArt/08.jpg" alt="" />
-          </figure>
-        </li>        
-      </ul>
+    <div class="wrapper" id="digitalArt">
+      <div class="">
+        <h1> Digital Art </h1>
+        <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-3 masonry">
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/digitalArt/01.jpg" alt="" />
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/digitalArt/02.jpg" alt="" />
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/digitalArt/03.jpg" alt="" />
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/digitalArt/04.jpg" alt="" />
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/digitalArt/05.jpg" alt="" />
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/digitalArt/06.jpg" alt="" />
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/digitalArt/07.jpg" alt="" />
+            </figure>
+          </li>
+          <li class="masonry-item grid">
+            <figure class="effect-sarah"> <img src="images/digitalArt/08.jpg" alt="" />
+            </figure>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
 
 
-<!--   <div class="wrapper" id="posters">
+    <!--   <div class="wrapper" id="posters">
     <div class="">
       <h1> Posters </h1>
       <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-3 masonry">
@@ -746,85 +920,88 @@ done  -->
       </ul>
     </div>
   </div> -->
-</main>
+  </main>
 
-<!-- Image Gallery --> 
+  <!-- Image Gallery -->
 
 
 
-<!-- footer -->
+  <!-- footer -->
 
-<footer class="footer">
-  <h3>Stay connected with us</h3>
-  <div class="container footer-bot">
-    <div class="row"> 
-      
-      <!-- logo -->
-      
-      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3"> <img src="images/footer-logo.png" alt="Picxa" title="Picxa"/>
-        <p class="copy-right">&copy; Reserved Picxa inc 2016.</p>
+  <footer class="footer">
+    <h3>Stay connected with us</h3>
+    <div class="container footer-bot">
+      <div class="row">
+
+        <!-- logo -->
+
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3"> <img src="images/footer-logo.png" alt="Picxa"
+            title="Picxa" />
+          <p class="copy-right">&copy; Reserved Picxa inc 2016.</p>
+        </div>
+
+        <!-- logo -->
+
+        <!-- address -->
+
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 padding-top">
+          <address>
+            <p>200 Broadway Av</p>
+            <p>West Beach SA 5024 Australia</p>
+          </address>
+        </div>
+
+        <!-- address -->
+
+        <!-- email -->
+
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 padding-top">
+          <p><a href="mailto:contact@Picxa.com">contact@Picxa.com</a></p>
+          <p>01 (2) 34 56 78</p>
+        </div>
+
+        <!-- email -->
+
+        <!-- social -->
+
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 padding-top">
+          <ul class="social">
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-flickr" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-delicious" aria-hidden="true"></i></a></li>
+          </ul>
+          <p class="made-by">Made with by <i class="fa fa-heart" aria-hidden="true"></i> <a
+              href="http://www.designstub.com/" target="_blank">Designstub</a>
+          <p>
+        </div>
+
+        <!-- social -->
+
       </div>
-      
-      <!-- logo --> 
-      
-      <!-- address -->
-      
-      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 padding-top">
-        <address>
-        <p>200 Broadway Av</p>
-        <p>West Beach SA 5024  Australia</p>
-        </address>
-      </div>
-      
-      <!-- address --> 
-      
-      <!-- email -->
-      
-      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 padding-top">
-        <p><a href="mailto:contact@Picxa.com">contact@Picxa.com</a></p>
-        <p>01 (2) 34 56 78</p>
-      </div>
-      
-      <!-- email --> 
-      
-      <!-- social -->
-      
-      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 padding-top">
-        <ul class="social">
-          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-flickr" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-delicious" aria-hidden="true"></i></a></li>
-        </ul>
-        <p class="made-by">Made with by <i class="fa fa-heart" aria-hidden="true"></i> <a href="http://www.designstub.com/" target="_blank">Designstub</a>
-        <p> 
-      </div>
-      
-      <!-- social --> 
-      
     </div>
-  </div>
-</footer>
+  </footer>
 
-<!-- footer --> 
+  <!-- footer -->
 
-<!-- jQuery --> 
+  <!-- jQuery -->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script> 
-<script>window.jQuery || document.write('<script src="js/assets/jquery.min.js"><\/script>')</script> 
-<script src="js/assets/plugins.js" type="text/javascript"></script> 
-<script src="js/assets/bootstrap.min.js" type="text/javascript"></script> 
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script> 
-<script src="js/maps.js" type="text/javascript"></script> 
-<script src="js/custom.js" type="text/javascript"></script> 
-<script src="js/jquery.contact.js" type="text/javascript"></script> 
-<script src="js/main.js" type="text/javascript"></script> 
-<script src="js/gallery/masonry.pkgd.min.js" type="text/javascript"></script> 
-<script src="js/gallery/imagesloaded.pkgd.min.js" type="text/javascript"></script> 
-<script src="js/gallery/jquery.infinitescroll.min.js" type="text/javascript"></script> 
-<script src="js/gallery/main.js" type="text/javascript"></script> 
-<script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/assets/jquery.min.js"><\/script>')</script>
+  <script src="js/assets/plugins.js" type="text/javascript"></script>
+  <script src="js/assets/bootstrap.min.js" type="text/javascript"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+  <script src="js/maps.js" type="text/javascript"></script>
+  <script src="js/custom.js" type="text/javascript"></script>
+  <script src="js/jquery.contact.js" type="text/javascript"></script>
+  <script src="js/main.js" type="text/javascript"></script>
+  <script src="js/gallery/masonry.pkgd.min.js" type="text/javascript"></script>
+  <script src="js/gallery/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+  <script src="js/gallery/jquery.infinitescroll.min.js" type="text/javascript"></script>
+  <script src="js/gallery/main.js" type="text/javascript"></script>
+  <script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
 </body>
+
 </html>
